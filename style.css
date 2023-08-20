@@ -1,4 +1,6 @@
-
+body{
+    background: black;
+}
 .title{
     position: absolute;
     top: 42%;
@@ -14,32 +16,32 @@
     height: 100vh;
     background: black;
     position: fixed;
-    display: grid;
+    display: grid;    /* cause we need to stack up the loading text and pace loading js*/
     align-items: center;
     justify-content: center;
-
+    
 }
 .loading_text{
     letter-spacing: 20px;
     color: white;
     font-weight: 400;
-    position: relative;
+    position: relative;     /*the parent div is abs*/
     top: -50px;
-    pointer-events: none;
+    pointer-events: none;   /* no selection allowed */
     user-select: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 .pace{
     pointer-events: none;
     user-select: none;
-    z-index: 2000;
+    z-index: 2000;   /* TO stay at the very top */
     position: fixed;
     margin: auto;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    width: 400px;
+    width: 400px;    /* loading progress total length */
     border: 0;
     height: 1px;
     overflow: hidden;
@@ -50,7 +52,7 @@
     position: absolute;
     z-index: 2000;
     top: 0;
-    right: 100%;
+    right: 100%;     /* which side loading will happen */
     height: 100%;
     width: 100%;
     background: white;
