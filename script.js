@@ -1,6 +1,6 @@
 paceOptions = {
-    ajax: true,
-    document: true
+    ajax: true,      //checks for ajax server side returns are true or not
+    document: true   //checks if the documents are true or not
 }
 Pace.on("done", () =>{
     gsap.timeline()
